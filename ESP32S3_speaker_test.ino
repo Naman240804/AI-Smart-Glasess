@@ -56,7 +56,7 @@ const char* STT_API_URL = "https://speech.googleapis.com/v1/speech:recognize";
 // Configuration
 const char* ssid = "S24 FE";
 const char* password = "123456789";
-const char* GEMINI_API_KEY = "AIzaSyC39OKXAZMnlHqkbdaoeSqBQMxV0RlgWO8";  // Replace with your Gemini API key
+const char* GEMINI_API_KEY = "";  // Replace with your Gemini API key
 // Try gemini-pro-vision for image analysis, or gemini-1.5-pro-latest
 // Using generateContent (not stream) since we need full response for TTS
 // Try gemini-1.5-flash or gemini-3-flash-preview (if available)
@@ -64,7 +64,7 @@ const char* GEMINI_API_KEY = "AIzaSyC39OKXAZMnlHqkbdaoeSqBQMxV0RlgWO8";  // Repl
 const char* GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent";
 
 // n8n webhook: send image + audio (base64), get back JSON with "text" (or "response") and we play via TTS
-const char* N8N_API_URL = "https://yashohara2004.app.n8n.cloud/webhook-test/b24ed352-0a5f-426d-bf71-6ea2e75aaa67";  // Replace with your n8n webhook URL
+const char* N8N_API_URL = "";  // Replace with your n8n webhook URL
 #define N8N_TIMEOUT_MS  60000  // n8n may take time (STT + Gemini + TTS)
 
 // TTS Configuration - Single stream (full response in one request)
